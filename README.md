@@ -51,10 +51,9 @@
 ## Use It!
 
 ```bash
-git clone https://github.com/antfu/vite-starter && cd vite-starter && rm -rf .git && git init && pnpm i
+git clone https://github.com/antfu/vitesse && cd vitesse && rm -rf .git && git init && pnpm i
 ```
 
 ## Why
 
 I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the idea simply comes true in very a short time. So I made this starter template for myself to create apps more easily, along with some good practices that I have learned during making those apps. It's strongly opinionated, but feel free to tweak it or even maintains your own forks.
->>>>>>> 76fb084 (chore: init)
