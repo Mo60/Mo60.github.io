@@ -16,13 +16,13 @@ async function toggleLocales() {
   <nav flex="~ gap-4" mt-6 justify-center text-xl>
     <!-- <RouterLink icon-btn to="/" :title="t('button.home')">
       <div i-carbon-campsite />
-    </RouterLink>
+    </RouterLink> -->
 
     <button icon-btn :title="t('button.toggle_dark')" @click="toggleDark()">
       <div i="carbon-sun dark:carbon-moon" />
     </button>
 
-    <a icon-btn :title="t('button.toggle_langs')" @click="toggleLocales()">
+    <!-- <a icon-btn :title="t('button.toggle_langs')" @click="toggleLocales()">
       <div i-carbon-language />
     </a>
 

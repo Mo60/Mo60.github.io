@@ -21,7 +21,7 @@ const { t } = useI18n()
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/Mo60" target="_blank">
-        Mo Khalil
+        <h1 text-4xl>Mo Khalil</h1>
       </a>
     </p>
     <p>
