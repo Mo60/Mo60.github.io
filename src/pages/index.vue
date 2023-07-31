@@ -17,16 +17,18 @@ const { t } = useI18n()
 <template>
   <div>
     <div text-4xl>
-      <div i-carbon-campsite inline-block />
+      <div i-skill-icons:devto-dark inline-block />
     </div>
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
+      <a rel="noreferrer" href="https://github.com/Mo60" target="_blank">
+        Mo Khalil
       </a>
     </p>
     <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
+      Page's under construction
+      <!-- <em text-sm opacity-75>{{ t('intro.desc') }}</em> -->
     </p>
+    <a href="https://mo60.github.io/School_MS-frontend/"> vite project example</a>
 
     <div py-4 />
 
