@@ -101,8 +101,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Github-Pages-Mo60',
+        short_name: 'Mo60',
         theme_color: '#ffffff',
         icons: [
           {
