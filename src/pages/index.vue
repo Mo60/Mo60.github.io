@@ -2,13 +2,16 @@
 defineOptions({
   name: 'IndexPage',
 })
-const user = useUserStore()
-const name = ref(user.savedName)
+// const user = useUserStore()
+// const name = ref(user.savedName)
 
 const router = useRouter()
-function go() {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
+// function go() {
+//   if (name.value)
+//     router.push(`/hi/${encodeURIComponent(name.value)}`)
+// }
+function go_to_flight_tracker() {
+  router.push('/flightTracker')
 }
 
 const { t } = useI18n()
@@ -32,15 +35,24 @@ const { t } = useI18n()
 
     <div py-4 />
 
-    <TheInput
+    <!-- <TheInput
       v-model="name"
       :placeholder="t('intro.whats-your-name')"
       autocomplete="false"
       @keydown.enter="go"
-    />
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
+    /> -->
+    <!-- <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label> -->
     <div>
+      <button
+        m-3 text-sm btn
+        @click="go_to_flight_tracker"
+      >
+        Go to Flights Tracker
+        <!-- {{ t('button.go') }} -->
+      </button>
+    </div>
+
+    <!-- <div>
       <button
         m-3 text-sm btn
         :disabled="!name"
@@ -48,7 +60,7 @@ const { t } = useI18n()
       >
         {{ t('button.go') }}
       </button>
-    </div>
+    </div> -->
   </div>
 </template>
 
