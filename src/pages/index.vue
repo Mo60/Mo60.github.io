@@ -14,7 +14,7 @@ function go_to_flight_tracker() {
   router.push('/flightTracker')
 }
 
-const { t } = useI18n()
+// const { t } = useI18n()
 </script>
 
 <template>
@@ -22,18 +22,29 @@ const { t } = useI18n()
     <div text-4xl>
       <div i-skill-icons:devto-dark inline-block />
     </div>
-    <p>
+    <!-- <p>
       <a rel="noreferrer" href="https://github.com/Mo60" target="_blank">
         <h1 text-4xl>Mo Khalil</h1>
       </a>
-    </p>
+    </p> -->
+    <h1 text-4xl>
+      Mo Khalil
+    </h1>
     <p>
       Page's under construction
       <!-- <em text-sm opacity-75>{{ t('intro.desc') }}</em> -->
     </p>
-    <a href="https://mo60.github.io/School_MS-frontend/"> vite project example</a>
-
+    <!-- <div>
+      <button
+        m-3 text-sm btn
+        @click="go_to_flight_tracker"
+      >
+        Flights Tracker
+        {{ t('button.go') }}
+      </button>
+    </div> -->
     <div py-4 />
+    <a m-3 text-sm btn href="https://mo60.github.io/School_MS-frontend/"> Go to vite project example</a>
 
     <!-- <TheInput
       v-model="name"
@@ -42,15 +53,6 @@ const { t } = useI18n()
       @keydown.enter="go"
     /> -->
     <!-- <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label> -->
-    <div>
-      <button
-        m-3 text-sm btn
-        @click="go_to_flight_tracker"
-      >
-        Go to Flights Tracker
-        <!-- {{ t('button.go') }} -->
-      </button>
-    </div>
 
     <!-- <div>
       <button

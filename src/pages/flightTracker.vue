@@ -6,8 +6,12 @@ const router = useRouter()
 function go() {
 }
 const { t } = useI18n()
-const date = new Date().toString().replace(/T/, ':').replace(/\.\w*/, '')
+const date_string = new Date().toString().replace(/T/, ':').replace(/\.\w*/, '')
 const flight1 = {}
+
+function go_home() {
+  router.push('/')
+}
 </script>
 
 <template>
@@ -17,7 +21,7 @@ const flight1 = {}
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/Mo60" target="_blank">
-        <h1 text-4xl> {{ date }} </h1>
+        <h1 text-4xl> {{ date_string }} </h1>
       </a>
     </p>
     <p> flight tracking page</p>
@@ -32,8 +36,14 @@ const flight1 = {}
       <li>EK 211 DXB ETA: 16:00</li>
       <li>QR 713 DOH ETA: 16:30</li>
     </ul>
-
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
+    <div>
+      <button
+        m-3 text-sm btn
+        @click="go_home"
+      >
+        Home
+      </button>
+    </div>
   </div>
 </template>
 

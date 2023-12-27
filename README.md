@@ -1,1 +1,4 @@
 
+To start :
+
+rnpm start
