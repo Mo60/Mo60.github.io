@@ -10,9 +10,9 @@ const router = useRouter()
 //   if (name.value)
 //     router.push(`/hi/${encodeURIComponent(name.value)}`)
 // }
-function go_to_flight_tracker() {
-  router.push('/flightTracker')
-}
+// function go_to_flight_tracker() {
+//   router.push('/flightTracker')
+// }
 
 // const { t } = useI18n()
 </script>
@@ -44,6 +44,7 @@ function go_to_flight_tracker() {
       </button>
     </div> -->
     <div py-4 />
+    <a m-3 text-sm btn href="https://main--cool-churros-29a255.netlify.app/"> Go to netlify App</a>
     <a m-3 text-sm btn href="https://mo60.github.io/School_MS-frontend/"> Go to vite project example</a>
 
     <!-- <TheInput
