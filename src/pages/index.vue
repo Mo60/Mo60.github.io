@@ -10,9 +10,9 @@ const router = useRouter()
 //   if (name.value)
 //     router.push(`/hi/${encodeURIComponent(name.value)}`)
 // }
-// function go_to_flight_tracker() {
-//   router.push('/flightTracker')
-// }
+function go_to_flight_tracker() {
+  router.push('/flightTracker')
+}
 
 // const { t } = useI18n()
 </script>
@@ -34,19 +34,23 @@ const router = useRouter()
       Page's under construction
       <!-- <em text-sm opacity-75>{{ t('intro.desc') }}</em> -->
     </p>
-    <!-- <div>
+    <div>
       <button
         m-3 text-sm btn
         @click="go_to_flight_tracker"
       >
         Flights Tracker
-        {{ t('button.go') }}
       </button>
-    </div> -->
+    </div>
     <div py-4 />
-    <a m-3 text-sm btn href="https://main--cool-churros-29a255.netlify.app/"> Go to netlify App</a>
-    <a m-3 text-sm btn href="https://mo60.github.io/School_MS-frontend/"> Go to vite project example</a>
 
+    <div py-4 />
+    <dic>
+      <a m-3 text-sm btn href="https://main--cool-churros-29a255.netlify.app/"> Go to netlify App</a>
+    </dic>
+    <div>
+      <a m-3 text-sm btn href="https://mo60.github.io/School_MS-frontend/"> Go to vite project example</a>
+    </div>
     <!-- <TheInput
       v-model="name"
       :placeholder="t('intro.whats-your-name')"
