@@ -1,10 +1,10 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.6.7",
+  "packageManager": "pnpm@9.0.1",
   "scripts": {
     "build": "vite-ssg build",
-    "dev": "vite --port 3333 --open --host",
+    "dev": "vite --port 3333 --open",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve docs",
