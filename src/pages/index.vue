@@ -35,19 +35,22 @@ function go_to_flight_tracker() {
       <!-- <em text-sm opacity-75>{{ t('intro.desc') }}</em> -->
     </p>
     <div>
-      <button
+      <!-- <button
         m-3 text-sm btn
         @click="go_to_flight_tracker"
       >
         Flights Tracker
-      </button>
+      </button> -->
     </div>
     <div py-4 />
 
     <div py-4 />
-    <dic>
+    <div>
+      <a m-3 text-sm btn href="https://flights-tracker.netlify.app/"> Go to netlify App</a>
+    </div>
+    <div>
       <a m-3 text-sm btn href="https://main--cool-churros-29a255.netlify.app/"> Go to netlify App</a>
-    </dic>
+    </div>
     <div>
       <a m-3 text-sm btn href="https://mo60.github.io/School_MS-frontend/"> Go to vite project example</a>
     </div>
